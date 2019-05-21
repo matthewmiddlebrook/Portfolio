@@ -1,0 +1,65 @@
+---
+title: Contact
+subtitle: Any questions, suggestions, or comments?
+layout: page
+hero_image: ../assets/contact-cover.jpg
+show_sidebar: false
+---
+
+<style>
+.title,.subtitle{
+    text-shadow: #000000 0 0 4px;
+}
+</style>
+
+<p>Please leave your name, email, and comment so I can get back to you. Or, shoot me an email at mkm15a@acu.edu. Thanks!</p>
+<br>
+<form method="POST" action="https://formspree.io/mkm15a@acu.edu">
+    <div class="field is-horizontal">
+        <div class="field-label is-normal">
+            <label class="label">From</label>
+        </div>
+        <div class="field-body">
+            <div class="field">
+                <p class="control is-expanded has-icons-left">
+                    <input class="input" type="name" name="name" placeholder="Name">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-user"></i>
+                    </span>
+                </p>
+            </div>
+            <div class="field">
+                <p class="control is-expanded has-icons-left">
+                    <input class="input" type="email" name="_replyto" placeholder="Email" required>
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="field is-horizontal">
+        <div class="field-label is-normal">
+            <label class="label">Comment</label>
+        </div>
+        <div class="field-body">
+            <div class="field">
+                <div class="control">
+                    <textarea class="textarea" type="text" name="message" placeholder="What's up?" required></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="field is-horizontal">
+        <div class="field-label">
+            <!-- Left empty for spacing -->
+        </div>
+        <div class="field-body">
+            <div class="field">
+                <div class="control">
+                    <button class="button is-primary" type="submit">Send message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

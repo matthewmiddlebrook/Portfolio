@@ -1,0 +1,17 @@
+- name: Skills
+  link: #
+  dropdown:
+    - name: Technical Design
+      link: /technical-design/
+    - name: 3D Modeling
+      link: /3d-modeling/
+    - name: Photography
+      link: /photography/
+# - name: Products
+#   link: /products/
+# - name: Blog
+#   link: /blog/
+- name: About
+  link: /about/
+- name: Contact
+  link: /contact/
