@@ -2,16 +2,16 @@
   link: #
   dropdown:
     - name: Technical Design
-      link: /technical-design/
+      link: /technical-design
     - name: 3D Modeling
-      link: /3d-modeling/
+      link: /3d-modeling
     - name: Photography
-      link: /photography/
+      link: /photography
 # - name: Products
-#   link: /products/
+#   link: /products
 # - name: Blog
-#   link: /blog/
+#   link: /blog
 - name: About
-  link: /about/
+  link: /about
 - name: Contact
-  link: /contact/
+  link: /contact
