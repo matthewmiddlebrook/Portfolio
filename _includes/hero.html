@@ -1,8 +1,18 @@
-<section class="hero {% if page.hero_height %} {{ page.hero_height }} {% else %} is-medium {% endif %} is-bold is-primary" {% if page.hero_image %} style="background: url('{{ page.hero_image }}') no-repeat center center; background-size: cover;" {% endif %}>
+<section
+    class="hero {% if page.hero_height %} {{ page.hero_height }} {% else %} is-medium {% endif %} is-bold is-primary"
+    {% if page.hero_image %}
+    style="background: url('{{ page.hero_image }}') no-repeat center center; background-size: cover;" {% endif %}>
     <div class="hero-body">
         <div class="container">
-            <p class="title is-2">{{ page.title }}</p>
-            <p class="subtitle is-3">{{ page.subtitle }}</p>
+            <div class="columns">
+                <div class="column is-three-fifths-widescreen is-one-half-desktop is-one-third-tablet">
+                    <p class="title is-2">{{ page.title }}</p>
+                    <p class="subtitle is-3">{{ page.subtitle }}</p>
+                </div>
+                <div class="column">
+                    {% if page.has_quote %} {% include quote.html %} {% endif %}
+                </div>
+            </div>
         </div>
     </div>
 </section>
