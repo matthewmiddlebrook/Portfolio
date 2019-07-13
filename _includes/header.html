@@ -1,4 +1,5 @@
-<nav class="navbar is-fixed-top is-dark" role="navigation" aria-label="dropdown navigation">
+<nav id="navbar" class="navbar is-fixed-top is-dark" {% if page.url == "/" %}style="background-color: black;"{% endif %}
+    role="navigation" aria-label="dropdown navigation">
     <div class="container">
         <div class="navbar-brand">
             <a href="{{ site.baseurl }}/" class="navbar-item">
@@ -19,7 +20,8 @@
                 <div class="navbar-item has-dropdown is-hoverable">
                     <a href="#"
                         class="navbar-link {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
-                    <div class="navbar-dropdown" style="{% if page.url == "/" %}background-color:#4a4a4a{% endif %}">
+                    <div class="navbar-dropdown"
+                        style="{% if page.url == "/" %}background-color:#4a4a4a; border-top: 2px solid #808080{% endif %}">
                         {% for subitem in item.dropdown %}
                         <a href="{{ subitem.link | prepend: site.baseurl }}"
                             class="navbar-item {% if subitem.link == page.url %}is-active{% endif %}">{{ subitem.name }}</a>
