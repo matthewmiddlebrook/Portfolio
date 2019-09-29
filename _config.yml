@@ -4,8 +4,8 @@ tagline: Matthew Middlebrook's Portfolio
 email: your-email@domain.com
 description: >
   The demo site for Bulma Clean Theme, made for Jekyll and GitHub pages websites
-baseurl: "/"
-url: "https://master.d2qn0a0hvz6og4.amplifyapp.com/"
+baseurl: ""
+url: "https://master.d2qn0a0hvz6og4.amplifyapp.com"
 
 paginate: 5
 paginate_path: "/blog/page:num"
