@@ -1,9 +1,41 @@
-<p class="title is-4">Latest Posts</p>
-
-<div class="columns is-multiline">
-  {% for post in site.posts limit:3 %}
-  <div class="column is-12">
-    {% include post-card.html %}
-  </div>
-  {% endfor %}
-</div>
+<nav class="panel" style="position: -webkit-sticky; position: sticky; top: 75px;">
+  <p class="panel-heading">
+    <a href="/3d-modeling">3D Modeling Projects</a>
+  </p>
+  <a class="panel-block {% if page.url == '/projects/coba-3d.html' %} is-active {% endif %}" href="/projects/coba-3d">
+    <span class="panel-icon">
+      <i class="fas fa-cube" aria-hidden="true"></i>
+    </span>
+    COBA 3D
+  </a>
+  <a class="panel-block {% if page.url == '/projects/bible-building.html' %} is-active {% endif %}" href="/projects/bible-building">
+    <span class="panel-icon">
+      <i class="fas fa-cube" aria-hidden="true"></i>
+    </span>
+    Bible Building
+  </a>
+  <a class="panel-block {% if page.url == '/projects/steam-vr.html' %} is-active {% endif %}" href="/projects/steam-vr">
+    <span class="panel-icon">
+      <i class="fas fa-cube" aria-hidden="true"></i>
+    </span>
+    Steam VR Environments
+  </a>
+  <a class="panel-block {% if page.url == '/projects/anvil.html' %} is-active {% endif %}" href="/projects/anvil">
+    <span class="panel-icon">
+      <i class="fas fa-cube" aria-hidden="true"></i>
+    </span>
+    Anvil
+  </a>
+  <a class="panel-block {% if page.url == '/projects/fire-station.html' %} is-active {% endif %}" href="/projects/fire-station">
+    <span class="panel-icon">
+      <i class="fas fa-cube" aria-hidden="true"></i>
+    </span>
+    Fire Station
+  </a>
+  <a class="panel-block {% if page.url == '/projects/reunion-tower.html' %} is-active {% endif %}" href="/projects/reunion-tower">
+    <span class="panel-icon">
+      <i class="fas fa-cube" aria-hidden="true"></i>
+    </span>
+    Reunion Tower
+  </a>
+</nav>

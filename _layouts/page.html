@@ -1,6 +1,16 @@
 ---
 layout: default
 ---
+{% if page.show_breadcrumbs %}
+<nav class="breadcrumb" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="/3d-modeling">3D Modeling</a></li>
+    <li class="is-active"><a href="#" aria-current="page">{{page.nav-title}}</a></li>
+  </ul>
+</nav>
+{% endif %}
+
+<br />
 
 <div class="content">
   {{ content }}
