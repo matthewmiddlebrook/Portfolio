@@ -20,7 +20,7 @@ plugins:
   - kramdown
   - rouge
 
-exclude: 
+exclude:
   - Gemfile
   - clean-theme.gemspec
   - Gemfile.lock
@@ -28,7 +28,7 @@ exclude:
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/
-  - vendor/ruby/ 
+  - vendor/ruby/
 
 livereload: true
 
@@ -39,14 +39,12 @@ sass:
 #google_analytics: UA-code-here
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "pages"
     values:
       show_sidebar: true
-  -
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:
@@ -61,7 +59,7 @@ highlighter: rouge
 footer_menu: example_footer_menu
 
 collections:
-  products: 
+  products:
     output: true
     layout: product
     image: https://via.placeholder.com/800x600
