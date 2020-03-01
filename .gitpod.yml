@@ -2,8 +2,5 @@ ports:
   - port: 3000
     onOpen: open-preview
 tasks:
-  - init: >
-      bundle install
-      npm install
-    command: >
-      bundle exec jekyll serve
+  - init: bundle install && npm install
+    command: bundle exec jekyll serve
